@@ -1,0 +1,23 @@
+program: train.py
+method: bayes
+metric:
+  goal: maximize
+  name: bbox_mAP
+parameters:
+  batch_size:
+    distribution: int_uniform
+    max: 32
+    min: 4
+  epoch:
+    distribution: int_uniform
+    max: 50
+    min: 10
+  lr:
+    distribution: uniform
+    max: 0.0005
+    min: 1e-05
+  optimizer:
+    values:
+      - AdamW
+      - Adam
+      - SGD

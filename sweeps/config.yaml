@@ -1,0 +1,4 @@
+seed:
+  value: 3
+model_config:
+  value: /opt/ml/final-project-level3-cv-03/mmdetection/configs/_custom_/cascade_swinlarge.py

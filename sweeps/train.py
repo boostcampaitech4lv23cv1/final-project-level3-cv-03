@@ -41,7 +41,7 @@ def main():
         project="Final Project",
         config="/opt/ml/final-project-level3-cv-03/sweeps/config.yaml"
         )
-    this_run_name=f"[{this_run_num}]-cascade-swin-large-{wandb.run.id}"
+    this_run_name=f"[{this_run_num}]-cascade-swin-large"
     wandb.run.name=this_run_name
     wandb.run.save()
 
